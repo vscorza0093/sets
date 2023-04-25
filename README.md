@@ -59,3 +59,19 @@ Studying collection data type - Set
         new_difference_list.sort()
 
         print(''.join(new_difference_list) + "-> second way")
+
+
+## &#128013; Set Comprehension
+
+* Set comprehension works like list comprehension and accepts the same syntax that list comprehension accepts
+* Its a sofisticated and quick way to create sets based on loops with conditions
+
+        expression one: {expression for item in iterable}
+        expression two: {expression for item in iterable if condition}
+
+
+* It's a good way to obtain a filter effect:
+
+        html = {x for x in files if x.lower().endswith((".htm", ".html"))}
+
+* Here we are selecting just the files that have the extension .htm or .html af transforming the input in a lower case string
