@@ -83,9 +83,6 @@
         tuples_are_ok = frozenset({("tuple","collection","is","hashable","type")})
         frozenset_too = frozenset(imutable_set)
 
-        out:'frozenset({('tuple', 'collection', 'is', 'hashable', 'type')})'
-        out:'frozenset({<__main__.Person object at 0x0000025D0AC51010>, 3, 7, 'string', 6})'
-
 ## Set Comprehension
 
 * Set comprehension works like list comprehension and accepts the same syntax that list comprehension accepts
