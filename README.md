@@ -77,6 +77,7 @@
         out:'frozenset({<__main__.Person object at 0x0000025D0AC51010>, 3, 7, 'string', 6})'
 
 * Receives one argument and try to convert this argument into a set, accepting just hashable types
+        
         imutable_set = frozenset({7, 6, 3, "string", Person()})
 
         tuples_are_ok = frozenset({("tuple","collection","is","hashable","type")})
