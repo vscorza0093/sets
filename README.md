@@ -1,5 +1,5 @@
 # &#128013;  sets_studies
-Studying collection data type - Set
+## Studying collection data type - Set
 
 
 * Sets are mutable and ursorted collection, and can only store hashable and comparable objects, those objects that has the special method __hash__ that returns a unique hash number and persists during the object life and that could be compared by iguality with __eq__ special method. This aplly to the objects of imutable data type: tuple, frozenset, float, str, int
@@ -46,7 +46,7 @@ Studying collection data type - Set
         intermediate_set = {'1', '2', '3', '4', '5', 'f',
                             'g', 'h', 'j', 'k', 'l', 'm', 'p', 'v', 'z'}
 
-* Sets, when iterated, returns it items in unsorted way, theres no sort method to sets data type
+* Sets, when iterated, returns it items in unordered way, theres no sort method to sets data type
 
 * First method to get the difference between two sets
         difference_list = list(alpha_numeric_set.difference(intermediate_set))
@@ -61,7 +61,7 @@ Studying collection data type - Set
         print(''.join(new_difference_list) + "-> second way")
 
 
-## &#128013; Set Comprehension
+## Set Comprehension
 
 * Set comprehension works like list comprehension and accepts the same syntax that list comprehension accepts
 * Its a sofisticated and quick way to create sets based on loops with conditions
@@ -75,3 +75,19 @@ Studying collection data type - Set
         html = {x for x in files if x.lower().endswith((".htm", ".html"))}
 
 * Here we are selecting just the files that have the extension .htm or .html af transforming the input in a lower case string
+
+
+## Frozenset
+
+* Frozenset are a unordered and imutable collection data type, the only way to insert data into a frozenset is when we create it, so all the arguments has to be passed in time
+
+        imutable_set = ({"string", 200, PesonClass()})
+
+# Receives one argument and try to convert this argument into a set, accepting just hashable types
+        imutable_set = frozenset({7, 6, 3, "string", Person()})
+
+        tuples_are_ok = frozenset({("tuple","collection","is","hashable","type")})
+        frozenset_too = frozenset(imutable_set)
+
+        **frozenset({('tuple', 'collection', 'is', 'hashable', 'type')})
+        **frozenset({<__main__.Person object at 0x0000025D0AC51010>, 3, 7, 'string', 6})
