@@ -61,15 +61,6 @@
         print(''.join(new_difference_list) + "-> second way")
 
 
-## Set Comprehension
-
-* Set comprehension works like list comprehension and accepts the same syntax that list comprehension accepts
-* Its a sofisticated and quick way to create sets based on loops with conditions
-
-        expression one: {expression for item in iterable}
-        expression two: {expression for item in iterable if condition}
-
-
 * It's a good way to obtain a filter effect:
 
         html = {x for x in files if x.lower().endswith((".htm", ".html"))}
@@ -85,7 +76,7 @@
 
         out:'frozenset({<__main__.Person object at 0x0000025D0AC51010>, 3, 7, 'string', 6})'
 
-# Receives one argument and try to convert this argument into a set, accepting just hashable types
+* Receives one argument and try to convert this argument into a set, accepting just hashable types
         imutable_set = frozenset({7, 6, 3, "string", Person()})
 
         tuples_are_ok = frozenset({("tuple","collection","is","hashable","type")})
@@ -93,3 +84,11 @@
 
         out:'frozenset({('tuple', 'collection', 'is', 'hashable', 'type')})'
         out:'frozenset({<__main__.Person object at 0x0000025D0AC51010>, 3, 7, 'string', 6})'
+
+## Set Comprehension
+
+* Set comprehension works like list comprehension and accepts the same syntax that list comprehension accepts
+* Its a sofisticated and quick way to create sets based on loops with conditions
+
+        expression one: {expression for item in iterable}
+        expression two: {expression for item in iterable if condition}
