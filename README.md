@@ -33,7 +33,7 @@ Studying collection data type - Set
         * <method-wrapper '__hash__' of int object at 0x00007FFB57E7E328>
         print(int(1).__hash__)
 
-In the other side, lists could store anything
+* In the other hand, lists could store anything
 
         crazy_list = [{"set"}, {"dict": "onary"},
                       ["crazy", "list"], "oh gosh", 1, 0, 0]
