@@ -53,7 +53,14 @@ for char in alpha_numeric_set:
     print(char)
 
 
+# First method to get the difference between two sets
 difference_list = list(alpha_numeric_set.difference(intermediate_set))
 difference_list.sort()
 
-print(''.join(difference_list))
+print(''.join(difference_list) + "-> first way")
+
+# Second method to get the difference between two sets
+new_difference_list = list(alpha_numeric_set - intermediate_set)
+new_difference_list.sort()
+
+print(''.join(new_difference_list) + "-> second way")
